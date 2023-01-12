@@ -6,6 +6,8 @@ const chatContainer = document.querySelector('#chat_container');
 
 let loadInterval
 
+console.log(process.env.OPENAI_API_KEY);
+
 function loader(element) {
     element.textContent = ''
 
