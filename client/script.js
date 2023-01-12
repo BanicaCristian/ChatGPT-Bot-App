@@ -6,6 +6,7 @@ const chatContainer = document.querySelector('#chat_container');
 
 let loadInterval
 
+process.env.OPENAI_API_KEY = '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';
 console.log(process.env.OPENAI_API_KEY);
 
 function loader(element) {
