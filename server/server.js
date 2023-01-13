@@ -4,12 +4,17 @@ import cors from 'cors';
 import {Configuration, OpenAIApi} from 'openai';
 
 
+dotenv.config({path: '../.env'})
+
+console.log(process.env.OPENAI_API_KEY);
+
 dotenv.config();
 const configuration = new Configuration ({
     organization: "org-K7tqnqhdlzjAly9PtzX7wYWv",
     apiKey: process.env.OPENAI_API_KEY,
 });
- 
+
+
 const openai = new OpenAIApi(configuration);
 const app = express();
 app.use(cors());
